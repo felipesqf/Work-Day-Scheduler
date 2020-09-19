@@ -7,7 +7,7 @@ $("#currentDay").append(todayString);
 returnStoredTasks();
 // color code application
 var currentHour = (moment().format('HH'));
-for(var i = 09; i < 18; i++){ 
+for(var i = 09; i < 19; i++){ 
     var taskBlock = $("#"+i).attr("data-id");
     var dynamicId = "#"+i;
         if (taskBlock < currentHour){
@@ -29,7 +29,7 @@ $(".input-group-text").on("click", function(event){
 
 // return tasks descriptions from the local storage
 function returnStoredTasks(){
-for(var i = 09; i < 18; i++){ 
+for(var i = 09; i < 19; i++){ 
     var storedID = "#"+i;
     var storedTask = JSON.parse(localStorage.getItem(storedID));
     if (storedTask !== null) {

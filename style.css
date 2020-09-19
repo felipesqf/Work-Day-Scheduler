@@ -73,3 +73,11 @@ textarea{
 .input-group {
   padding-bottom: 10px;
 }
+
+.fa-save{
+  font-size:36px;
+}
+
+.input-group-text{
+  font-size:20px;
+}
