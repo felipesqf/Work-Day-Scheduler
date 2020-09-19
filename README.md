@@ -32,9 +32,9 @@ THEN the saved events persist<br>
 * [Terminal](https://gitforwindows.org/) - Git terminal
 ​
 #### Final Interface
-​![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic01.PNG) 
-![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic02.PNG) 
-​![screenshot1](https://github.com/felipesqf/Password-Generator/blob/master/images/pic03.PNG) 
+​![screenshot1](https://github.com/felipesqf/Work-Day-Scheduler/blob/master/images/pic01.PNG) 
+![screenshot1](https://github.com/felipesqf/Work-Day-Scheduler/blob/master/images/pic02.PNG) 
+​![screenshot1](https://github.com/felipesqf/Work-Day-Scheduler/blob/master/images/pic03.PNG) 
 
 
 ### Licence
