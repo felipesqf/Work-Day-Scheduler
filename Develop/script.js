@@ -11,11 +11,11 @@ for(var i = 09; i < 18; i++){
     var taskBlock = $("#"+i).attr("data-id");
     var dynamicId = "#"+i;
         if (taskBlock < currentHour){
-            $(dynamicId).css({'background-color' : '#F08080'})}
+            $(dynamicId).css({'background-color' : '#d3d3d3'})}
         else if (taskBlock === currentHour){
-            $(dynamicId).css({'background-color' : '#A9A9A9'});}
+            $(dynamicId).css({'background-color' : '#ff6961'});}
         else{
-            $(dynamicId).css({'background-color' : '#90EE90'});}
+            $(dynamicId).css({'background-color' : '#77dd77;'});}
 }
 //save the task description on local storage upon clicking on save 
 $(".input-group-text").on("click", function(event){
@@ -26,6 +26,7 @@ $(".input-group-text").on("click", function(event){
     localStorage.setItem(newId, JSON.stringify(taskDescription));
     alert("Saved")
 })
+
 // return tasks descriptions from the local storage
 function returnStoredTasks(){
 for(var i = 09; i < 18; i++){ 
