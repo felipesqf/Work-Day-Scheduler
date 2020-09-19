@@ -4,6 +4,7 @@ $(document).ready(function() {
 const todayString = moment().toString(); 
 $("#currentDay").append(todayString);
 
+returnStoredTasks();
 // color code application
 var currentHour = (moment().format('HH'));
 for(var i = 09; i < 18; i++){ 
@@ -16,25 +17,24 @@ for(var i = 09; i < 18; i++){
         else{
             $(dynamicId).css({'background-color' : '#90EE90'});}
 }
-
 //save the task description on local storage upon clicking on save 
 $(".input-group-text").on("click", function(event){
     event.preventDefault();
     var newId = $(this).attr('class');
-    newId = "#"+ newId.slice(0, 3);
+    newId = "#"+ newId.slice(0, 2).trim();
     var taskDescription = $(newId).val();
     localStorage.setItem(newId, JSON.stringify(taskDescription));
+    alert("Saved")
 })
-
-
-// for(var i = 09; i < 18; i++){ 
-
-//     var storedTodos = JSON.parse(localStorage.getItem("todos"));
-
-   
-//     if (storedTodos !== null) {
-//         todos = storedTodos;
-//   }
-// }
+// return tasks descriptions from the local storage
+function returnStoredTasks(){
+for(var i = 09; i < 18; i++){ 
+    var storedID = "#"+i;
+    var storedTask = JSON.parse(localStorage.getItem(storedID));
+    if (storedTask !== null) {
+        $(storedID).append(storedTask);
+  }
+}
+}
 
 })
