@@ -15,7 +15,7 @@ for(var i = 09; i < 19; i++){
         else if (taskBlock === currentHour){
             $(dynamicId).css({'background-color' : '#ff6961'});}
         else{
-            $(dynamicId).css({'background-color' : '#77dd77;'});}
+            $(dynamicId).css({'background-color' : '#77dd77'});}
 }
 //save the task description on local storage upon clicking on save 
 $(".input-group-text").on("click", function(event){
